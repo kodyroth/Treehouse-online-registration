@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>The Code Review</title>
+    <link rel="icon" 
+          type="image/png" 
+          href="images/fav.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <header>
+      <h1>The Code Review</h1>
+      <div class="wrapper">
+        <h2>Signup for our newsletter</h2>
+        <p class="tagline">Get the latest news on how your code is doing right in your inbox</p>
+      </div>
+    </header>
+    <main>
+      <div class="wrapper form">
+        <form action="#" method="POST">  
+          <fieldset class="contact-info clearfix">
+            <legend class="title">Contact Information</legend>
+            <div class="item">
+              <Label for="fullname">Full Name</label>
+              <input id="fullname" type="text" name="fullname" placeholder="Required" required>
+            </div>
+            <div class="item">
+              <Label for="Email">Email Address</label>
+              <input id="Email" type="email" name="Email" placeholder="Required" required>
+            </div>
+            <div class="item">
+              <Label for="Phone">Phone Number</label>
+              <input id="Phone" type="tel" name="Phone">
+            </div>
+            <div class="item">
+              <Label for="Address">Street Address</label>
+              <input id="Address" type="text" name="Address">
+            </div>
+            <div class="item">
+              <Label for="City">City</label>
+              <input id="City" type="text" name="City">
+            </div>
+            <div class="item">
+              <Label for="State">State</label>
+              <select id="State" class="state" name="state" size="1">
+                <option value="Choose State" class="disabled" disabled selected>Choose State</option>
+                <option value="AK">AK</option>
+                <option value="AL">AL</option>
+                <option value="AR">AR</option>
+                <option value="AZ">AZ</option>
+                <option value="CA">CA</option>
+                <option value="CO">CO</option>
+                <option value="CT">CT</option>
+                <option value="DC">DC</option>
+                <option value="DE">DE</option>
+                <option value="FL">FL</option>
+                <option value="GA">GA</option>
+                <option value="HI">HI</option>
+                <option value="IA">IA</option>
+                <option value="ID">ID</option>
+                <option value="IL">IL</option>
+                <option value="IN">IN</option>
+                <option value="KS">KS</option>
+                <option value="KY">KY</option>
+                <option value="LA">LA</option>
+                <option value="MA">MA</option>
+                <option value="MD">MD</option>
+                <option value="ME">ME</option>
+                <option value="MI">MI</option>
+                <option value="MN">MN</option>
+                <option value="MO">MO</option>
+                <option value="MS">MS</option>
+                <option value="MT">MT</option>
+                <option value="NC">NC</option>
+                <option value="ND">ND</option>
+                <option value="NE">NE</option>
+                <option value="NH">NH</option>
+                <option value="NJ">NJ</option>
+                <option value="NM">NM</option>
+                <option value="NV">NV</option>
+                <option value="NY">NY</option>
+                <option value="OH">OH</option>
+                <option value="OK">OK</option>
+                <option value="OR">OR</option>
+                <option value="PA">PA</option>
+                <option value="RI">RI</option>
+                <option value="SC">SC</option>
+                <option value="SD">SD</option>
+                <option value="TN">TN</option>
+                <option value="TX">TX</option>
+                <option value="UT">UT</option>
+                <option value="VA">VA</option>
+                <option value="VT">VT</option>
+                <option value="WA">WA</option>
+                <option value="WI">WI</option>
+                <option value="WV">WV</option>
+                <option value="WY">WY</option>
+              </select>
+            </div>
+            <div class="item">  
+              <label for="Zip">Zip Code</label>
+              <input id="Zip" type="number" name="Zip">
+            </div> 
+          </fieldset>
+          <hr>
+          <fieldset class="newsletter ">
+            <legend class="news-title">Newsletter</legend>
+              <p>Select the newsletter you would like to receive</p>
+              <div class="item no-float"><input type="checkbox" id="cbox1" value="first_checkbox"><label for="cbox1">HTML News</label></div>
+              <div class="item no-float"><input type="checkbox" id="cbox2" value="second_checkbox"> 
+              <label for="cbox2">CSS News</label></div>
+              <div class="item no-float"><input type="checkbox" id="cbox3" value="second_checkbox">
+              <label for="cbox3">Javascript News</label></div>
+              <p>Newsletter Format</p>
+              <div class="item no-float"><input class="roundbutton" name="radio" type="radio" id="cbox4" value="first_checkbox"><label for="cbox4">HTML</label></div>
+              <div class="item no-float"><input class="roundbutton" name="radio" type="radio" id="cbox5" value="second_checkbox"><label for="cbox5">Plain Text</label></div>
+              <label class="other-topics"for="other-topics">Other topics you would like to hear about</label>
+              <textarea id="other-topics" name="comments"></textarea>
+              <button class="button">Sign Up</button>     
+          </fieldset> 
+        </form>
+      </div> <!--.wrapper--> 
+    </main>
+    <footer>
+      <p class="copyright">The Code Review</p>
+    </footer>
+  </body>
+</html>

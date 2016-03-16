@@ -1,0 +1,277 @@
+/*-----------------------------------------------
+  GLOBAL STYLES
+------------------------------------------------*/
+
+* { 
+  box-sizing: border-box;
+}
+  
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #617383;
+  background: #fff;
+}
+h1,h2,h3,h4 {
+  font-family: 'Open Sans', sans-serif;
+  color: #2d3945;
+}
+p {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+hr {
+  border-top: 2px solid #46698b;
+}
+
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  color: #4ebbb5;
+}
+a:hover {
+  color: #2d3945;
+}
+
+.wrapper, .wrapper-skinny{
+  width: 90%;
+  margin:0 auto;
+}
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+.center {
+  text-align: center;
+}
+
+/*-----------------------------------------------
+  HEADER
+------------------------------------------------*/
+header div {
+  border-bottom: 4px solid #2d3945;
+}
+
+header h1 {
+  margin: 0;
+  padding: 10% 0;
+  text-align: center;
+  background: #2d3945;
+  color: white;
+  text-transform: uppercase;
+}
+header h2 {
+  text-align: center;
+  margin-bottom: 0;
+}
+.tagline {
+  font-size: 1em;
+  text-align: center;
+  color: #b7bcbf;
+  margin-bottom: 2em;
+}
+
+/*-----------------------------------------------
+  FORM
+------------------------------------------------*/
+
+.form {
+  border-top: 2px solid black;
+  margin-top: 4px;
+}
+.title,.news-title {
+  font-size: 1.4em;
+  font-weight: bold;
+  color:#2d3945;
+  padding: 1em 0;
+}
+
+
+input, select {
+  width: 100%;
+  background: #eff0f1;
+  height: 50px;
+  border: none;
+  border-radius: 0.5em;
+  padding: 0 5%;
+  margin: .7em 0 1em 0;
+  outline: 0;
+}
+input[name="Zip"] {
+  width: 50%;
+  display: block;
+}
+textarea {
+  min-height: 100px;
+  width: 100%;
+  background: #eff0f1;
+  border-radius: 0.5em;
+  border: none;
+  outline: 0;
+  margin-bottom: 1.4em;
+}
+input::-webkit-input-placeholder  {
+  color: #adb2b7;
+  text-align: right;
+  padding-right: 5%; 
+}
+input:focus, textarea:focus{
+  border:1px solid #46698b;
+  -webkit-box-shadow: inset 0px -2px 5px rgba(0,0,0,.35);
+  -moz-box-shadow: inset 0px -2px 5px rgba(0,0,0,.35);
+  box-shadow: inset 0px -2px 5px rgba(0,0,0,.35);
+}
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-left: 5%;
+    background: url("../images/arrow.svg") 95% 50% no-repeat;
+    background-color: #eff0f1;
+    background-size: 20px;
+}
+
+
+input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: .3em; 
+    margin-right: .5em;   
+}
+
+input[type='checkbox']:checked{
+  border:2px solid #46698b;
+  background: url("../images/check.svg") center center no-repeat;
+  background-color: #eff0f1;
+  background-size: 75%;
+}
+
+input[type='radio'] {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 100%; 
+    margin-right: .5em;   
+}
+input[type='radio']:checked{
+  border:2px solid #46698b;
+  background: url("../images/dot.svg") center center no-repeat;
+  background-color: #eff0f1;
+  background-size: 55%;
+}
+
+
+input[type='checkbox'] + label, input[type='radio'] + label {
+  display: inline-block;
+}
+
+input[type='checkbox'] + label:after, input[type='radio'] + label:after{
+    content:"\a";
+    white-space: pre;
+}
+
+.newsletter p {
+  margin-top:1em;
+}
+
+.other-topics {
+  width: 100%;
+  margin-bottom: 1em;
+  display: block;
+}
+.button {
+  width: 100%;
+  padding: 1.3rem 0;
+  background: #4ebbb5;
+  color: white;
+  border-radius: .3em;
+  border: none;
+  font-size: 1.5em;
+}
+
+/*-----------------------------------------------
+  FOOTER
+------------------------------------------------*/
+
+footer{
+  padding: 2.5% 0 10%;
+}
+
+.copyright {
+  color: #aaafb4;
+  text-align: center;
+  font-size: .8em;
+}
+
+/*-----------------------------------------------
+  Media Queries
+------------------------------------------------*/
+
+@media (min-width: 1024px) {
+  .wrapper{
+    width: 60%;
+  }
+  header h1 {
+    padding: 2.5% 0;
+  }
+
+
+  .item{
+    height: 50px;
+    margin-bottom: 1.2em;
+  }
+
+.other-topics {
+  margin-bottom: .5em;
+} 
+  label {
+    float: left;
+    display: inline-block;
+    width: 20%;
+    height: 50px;
+    padding: 1rem 0;
+    vertical-align: middle;
+  }
+  input, select {
+    float: right;
+    display: inline-block;
+    width: 80%;
+    margin: 0;
+    padding: 0 1.5%;
+    vertical-align: middle;
+  }
+  input[name="Zip"] {
+    width: 30%;
+    float: left;
+  }
+  input[type='checkbox'] + label, input[type='radio'] + label {
+    vertical-align: baseline;
+  }
+  .no-float {
+    margin: 0;
+    height: 35px;
+  }
+  .no-float input, .no-float label{
+    float: none;
+  }
+
+}
